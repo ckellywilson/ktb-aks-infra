@@ -38,22 +38,7 @@ resource aksCluster 'Microsoft.ContainerService/managedClusters@2024-03-02-previ
         mode: 'System'
         enableAutoScaling: true
         minCount: 3
-        maxCount: 6
-      }
-      {
-        name: 'user1'
-        count: nodeCount
-        vmSize: nodeSize
-        osType: 'Linux'
-        mode: 'User'
-        enableAutoScaling: true
-        minCount: 3
-        maxCount: 6
-        availabilityZones: [
-          '1'
-          '2'
-          '3'
-        ]
+        maxCount: 5
       }
     ]
     linuxProfile: {
