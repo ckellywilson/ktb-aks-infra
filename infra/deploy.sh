@@ -48,7 +48,7 @@ resourceGroupName="${prefix}-rg"
 
 # Get node size
 # query to find available vm skus in the location az vm list-skus --location $location --size Standard_D2ls_v5 --output table
-nodeSize='Standard_DS2_v2'
+nodeSize='Standard_D4ds_v5'
 
 # Deploy AKS cluster using Bicep template
 az deployment sub create --name $deploymentName \
