@@ -37,7 +37,7 @@ resource aksCluster 'Microsoft.ContainerService/managedClusters@2024-03-02-previ
         osType: 'Linux'
         mode: 'System'
         enableAutoScaling: true
-        minCount: 3
+        minCount: 2
         maxCount: 5
       }
     ]
