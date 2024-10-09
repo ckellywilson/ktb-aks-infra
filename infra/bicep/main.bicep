@@ -59,7 +59,7 @@ module aks 'aks.bicep' = {
   params: {
     adminUsername: adminUserName
     clusterName: aksName
-    nodeCount: 3
+    nodeCount: 2
     nodeSize: nodeSize
     keyData: sshKey.outputs.sshKey
     logAnalyticsWorkspaceId: law.outputs.logAnalyticsWorkspaceId
