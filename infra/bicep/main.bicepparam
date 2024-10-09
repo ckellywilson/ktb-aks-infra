@@ -7,5 +7,5 @@ param prefix = ''
 param nodeSize = ''
 param adminUserId = ''
 param tags = {
-  project: 'ktb-mod4'
+  project: 'ktb-aks'
 }
