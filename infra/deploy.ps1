@@ -28,11 +28,11 @@ $prefix="${initials}ktb"
 
 # Generate ED25519 SSH key
 Write-Host "Generating ED25519 SSH key..."
-ssh-keygen -t rsa -f ~/.ssh/id_rsa -N ""
+ssh-keygen -t rsa -f ~/.ssh/id_rsa
 
 # Set the tags
 Write-Host "Setting the tags..."
-$tags='{"project":"${prefix}"}'
+$tags="{'project': '${prefix}'}"
 
 # Get the public key
 $keyData=$(cat ~/.ssh/id_rsa.pub)
